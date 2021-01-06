@@ -34,4 +34,4 @@ spotdl
 gtts
 pandas
 fontTools
-pyrate-limiter
+ratelimit
