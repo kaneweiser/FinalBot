@@ -1,3 +1,4 @@
+pyrate-limiter
 future
 emoji
 lxml
@@ -34,4 +35,3 @@ spotdl
 gtts
 pandas
 fontTools
-ratelimit
