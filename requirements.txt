@@ -1,4 +1,5 @@
 pyrate-limiter
+redis-py
 future
 emoji
 lxml
