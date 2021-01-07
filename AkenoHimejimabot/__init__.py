@@ -100,7 +100,6 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     
 
-SUDO_USERS.add(OWNER_ID)
 
 
 
