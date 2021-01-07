@@ -35,7 +35,7 @@ class Config(object):
 
     #OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DEV_USERS = get_user_list('elevated_users.json', 'devs')
+    DEV_USERS = "SAITAMA"
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
