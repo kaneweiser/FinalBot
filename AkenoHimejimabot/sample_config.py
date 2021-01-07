@@ -1,7 +1,6 @@
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json
 import os
-PORT = int(os.environ.get('PORT', 5000))
 
 def get_user_list(config, key):
     with open('{}/AkenoHimejimabot/{}'.format(os.getcwd(), config),
