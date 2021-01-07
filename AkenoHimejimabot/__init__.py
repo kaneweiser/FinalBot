@@ -98,8 +98,7 @@ else:
     WORKERS = Config.WORKERS
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
-    STRICT_GMUTE = Config.STRICT_GMUTE
-   
+    
 
 SUDO_USERS.add(OWNER_ID)
 
