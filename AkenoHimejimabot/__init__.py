@@ -76,12 +76,12 @@ else:
         raise Exception("Your sudo users list does not contain valid integers.")
 
     try:
-        SUPPORT_USERS = set(int(x) for x in Config.SUPPORT_USERS or [])
+        SUPPORT_USERS = int(Config.OWNER_ID)
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
-        WHITELIST_USERS = set(int(x) for x in Config.WHITELIST_USERS or [])
+        WHITELIST_USERS = int(Config.OWNER_ID)
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
