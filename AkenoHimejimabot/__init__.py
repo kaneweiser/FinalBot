@@ -71,7 +71,7 @@ else:
     OWNER_USERNAME = Config.OWNER_USERNAME
 
     try:
-        SUDO_USERS = [])
+        SUDO_USERS = int(Config.OWNER_ID)
     except ValueError:
         raise Exception("Your sudo users list does not contain valid integers.")
 
