@@ -82,31 +82,7 @@ else:
     JOIN_LOGGER = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
 
-    try:
-        DRAGONS = set(int(x) for x in Config.DRAGONS or [])
-        DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
-    except ValueError:
-        raise Exception(
-            "Your sudo or dev users list does not contain valid integers.")
-
-    try:
-        DEMONS = set(int(x) for x in Config.DEMONS or [])
-    except ValueError:
-        raise Exception(
-            "Your support users list does not contain valid integers.")
-
-    try:
-        WOLVES = set(int(x) for x in Config.WOLVES or [])
-    except ValueError:
-        raise Exception(
-            "Your whitelisted users list does not contain valid integers.")
-
-    try:
-        TIGERS = set(int(x) for x in Config.TIGERS or [])
-    except ValueError:
-        raise Exception(
-            "Your tiger users list does not contain valid integers.")
-
+  
     EVENT_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
