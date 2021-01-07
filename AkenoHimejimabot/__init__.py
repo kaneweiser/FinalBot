@@ -107,9 +107,7 @@ updater = tg.Updater(TOKEN, workers=WORKERS)
 
 dispatcher = updater.dispatcher
 
-SUDO_USERS = list(SUDO_USERS)
-WHITELIST_USERS = list(WHITELIST_USERS)
-SUPPORT_USERS = list(SUPPORT_USERS)
+
 
 # Load at end to ensure all prev variables have been set
 from AkenoHimejimabot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler
