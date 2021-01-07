@@ -115,8 +115,7 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+
 
 if not SPAMWATCH_API:
     sw = None
@@ -128,11 +127,6 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("saitama", API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
-WOLVES = list(WOLVES)
-DEMONS = list(DEMONS)
-TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
 from AkenoHimejimabot.modules.helper_funcs.handlers import (CustomCommandHandler,
